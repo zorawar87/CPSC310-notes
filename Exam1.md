@@ -37,54 +37,66 @@
 ### Definitions of Clean Code ###
 
 #### Bjarne Stroustrup ####
-> code should be elegant and efficient
+* > code should be elegant and efficient
   * elegant = pleasing to read
-> logic should be straightforward to make it hard for bugs to hide,
-> the dependencies minimal to ease maintenance,
-> error handling complete according to an articulated strategy, and
+* > logic should be straightforward to make it hard for bugs to hide,
+
+* > the dependencies minimal to ease maintenance,
+
+* > error handling complete according to an articulated strategy, and
   * clean code exhibits close attention to detail
-> performance close to optimal so as not to tempt people to make the code messy with unprincipled optimizations
+* > performance close to optimal so as not to tempt people to make the code messy with unprincipled optimizations
   * Bad code tempts the mess to grow
-> **Clean code does one thing well.**
+* > **Clean code does one thing well.**
   * Bad code has muddled intent and ambiguity of purpose
   * Clean code is focused
 
 
 #### Grady Booch ####
-> Clean code is simple and direct.
-> reads like well-written prose
-> never obscures the designer’s intent
-> is full of crisp abstractions and straightforward lines of control
+* > Clean code is simple and direct.
+
+* > reads like well-written prose
+
+* > never obscures the designer’s intent
+
+* > is full of crisp abstractions and straightforward lines of control
   * oxymoron:
     * crisp =  briskly decisive and matter-of-fact; nearly a synonym for concrete
   * code should be matter-of-fact
 
 #### Dave Thomas ####
-> can be read, and enhanced by a developer other than its original author
+* > can be read, and enhanced by a developer other than its original author
   * clean code makes it easy for other people to enhance it
-> has unit and acceptance tests
-> has meaningful names
-> has minimal dependencies
-> should be literate since not all necessary information can be expressed clearly in code alone
+* > has unit and acceptance tests
+
+* > has meaningful names
+
+* > has minimal dependencies
+
+* > should be literate since not all necessary information can be expressed clearly in code alone
   * soft reference to Knuth’s literate programming
     * > combines a programming language with a documentation language
   * code should be composed in such a form as to make it readable by humans
 
 #### Michael Feathers ####
-> looks like it was written by someone who cares
-> nothing obvious that you can do to make it better
+* > looks like it was written by someone who cares
+
+* > nothing obvious that you can do to make it better
 
 #### Ron Jeffries ####
-> Runs all the tests;
-> Contains no duplication;
-> Expresses all the design ideas that are in the system;
-> Minimizes the number of entities such as classes, methods
+* > Runs all the tests;
+
+* > Contains no duplication;
+
+* > Expresses all the design ideas that are in the system;
+
+* > Minimizes the number of entities such as classes, methods
 
 #### Ward Cunningham ####
-> routine you read turns out to be pretty much what you expected
+* > routine you read turns out to be pretty much what you expected
   * Programs that are that clean are so profoundly well written that you don’t even notice it. 
   * the designer makes it look ridiculously simple like all exceptional designs.
-> beautiful code when the code also makes it look like the language was made for the problem
+* > beautiful code when the code also makes it look like the language was made for the problem
 
 ### WE ARE AUTHORS ###
 * The `@author` field of Javadoc tells us who we are
