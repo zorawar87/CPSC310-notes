@@ -150,7 +150,9 @@
       > `Complex fulcrumPoint = Complex.FromRealNumber(23.0);`
 
   instead of 
+
       > `Complex fulcrumPoint = new Complex(23.0);`
+
   11. Don't be cute
     * If you use clever names, only people who understand the reference will find it memorable; to the rest it's wtf
     * avoid colloquialism / slang / culture-dependent jokes
