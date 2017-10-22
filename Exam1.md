@@ -60,7 +60,7 @@
 * > never obscures the designer’s intent
 
 * > is full of crisp abstractions and straightforward lines of control
-  * oxymoron:
+  * "crisp abstractions" oxymoron:
     * crisp =  briskly decisive and matter-of-fact; nearly a synonym for concrete
   * code should be matter-of-fact
 
@@ -100,7 +100,7 @@
 
 ### WE ARE AUTHORS ###
 * The `@author` field of Javadoc tells us who we are
-* >The next time you write a line of code, remember you are an author, writing for readers who will judge your effort
+* > ***The next time you write a line of code, remember you are an author, writing for readers who will judge your effort***
 
 
 
