@@ -149,11 +149,19 @@
     * When constructors are overloaded, use static factory methods with names that describe the argument
         > `Complex fulcrumPoint = Complex.FromRealNumber(23.0);`
 
-    instead of 
+  instead of 
 
         > `Complex fulcrumPoint = new Complex(23.0);`
   11. Don't be cute
     * If you use clever names, only people who understand the reference will find it memorable; to the rest it's wtf
+    * avoid colloquialism / slang / culture-dependent jokes
+  12. Pick one word per concept
+    * Don't use "fetch", "get", "retrieve" to refer to the same concept
+  13. Don't pun
+    * Don't use the same word in different contexts just because it's funny or to overdo consistency
+    * If you have a lot of methods prefixed with `add`, then you should use `insert` if
+    * Rule of thumb: if the methods are semantically equivalent (similar structure for return values/params), all's good
+    * 
 
 
 
