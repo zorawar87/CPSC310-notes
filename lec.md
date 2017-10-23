@@ -63,7 +63,7 @@
 
 ### Show down ###
 Waterfall                               | Agile
---------------------------------------------------------------------------
+---------------------------------------- --------------------------------------
 + Easy learning curve                   | + Adaptability and flexibility
 + Clear Deadlines                       | + Immediate user feedback
 + Well-defined milestones               | + Test driven development
