@@ -62,16 +62,16 @@
     * be open to changing requirements, even late in development
 
 ### Show down ###
-Waterfall                               | Agile
-----------------------------------------|--------------------------------------
-+ Easy learning curve                   | + Adaptability and flexibility
-+ Clear Deadlines                       | + Immediate user feedback
-+ Well-defined milestones               | + Test driven development
-+ Requires stability                    | + Teamwork
-+ Predictable, and Easy to manage time  | - Unpredictable timeline
-- Very low flexibility                  | - High commitment 
-- Requirements must be known at start   | - Skill dependent teans  
-- Tendency to neglect testing           | - Tendency to neglect documentation
+Waterfall                                | Agile
+-----------------------------------------|--------------------------------------
+\+ Easy learning curve                   | + Adaptability and flexibility
+\+ Clear Deadlines                       | + Immediate user feedback
+\+ Well-defined milestones               | + Test driven development
+\+ Requires stability                    | + Teamwork
+\+ Predictable, and Easy to manage time  | - Unpredictable timeline
+\- Very low flexibility                  | - High commitment 
+\- Requirements must be known at start   | - Skill dependent teans  
+\- Tendency to neglect testing           | - Tendency to neglect documentation
 
 
 ## Scrum (implements the Agile Framework)  ##
