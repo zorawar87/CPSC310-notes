@@ -1,4 +1,4 @@
-# Design Patterns Ch-01 #
+
   * Principle: Separate aspects of the application that vary from parts that remain constant
     * take the parts that vary and encapsulate them, so that later you can alter or extend the parts that vary without affecting those that don’t.
   * Principle: Program to an interface, not an implementation
@@ -237,4 +237,37 @@
       if (employee.isEligibleForFullBenefits())
     ```
 
-  * asdas
+### Good Comments ###
+  * Legal Comments
+    * Talk about Copyright, License, Release Terms et c.
+    * go at the top of the source code
+  * Informative Comments
+    * basic information about the structure --- but it should be done with the structure name 
+    * Explaining some specificity e.g. 
+      ```java
+        // format matched kk:mm:ss EEE, MMM dd, yyyy
+        Pattern timeMatcher = Pattern.compile("\\d*:\\d*:\\d* \\w*, \\w* \\d*, \\d*");
+      ```
+  * Explanation of Intent
+    * explains the intent behind a decision -- "why was this implemented this way?"
+  * Clarification 
+    * translate the meaning of some obscure argument or return value into something that’s readable
+  * Warning of Consequences
+    * Warns of some unexpected or undesirable consequence 
+  * TODO Comments
+  * Amplification --- to make something that might seem inconsequential more pronounced
+  * JavaDoc
+
+### Bad Comments ###
+  * Mumbling Comments: If you're writing a comment, write a good one;
+  * Redundant Comments: Useless JavaDoc, hard to read comments
+  * Misleading Comments
+  * Mandated Comments: Not every function requires a javadoc 
+  * Journaled Commments: Writing a changelog within the file. 
+  * Noise Comments: "Default Constructor", "The day of the month" for `int dayOfMonth`
+  * Closing Brace Comments
+  * Commented out code
+  * HTML Comments
+
+# Clean Code Ch-05: Formatting #
+  * Just fucking format within reason
