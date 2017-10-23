@@ -222,13 +222,15 @@
   * If you fail to express it in code, you use a comment.
   * Don't use comments to makeup for bad code. Rewrite bad code.
   * Explain yourself in code
-    > ```java
-        // Check to see if the employee is eligible for full benefits
-        if ((employee.flags & HOURLY_FLAG) && (employee.age > 65)) 
-      ```
+    ```java
+      // Check to see if the employee is eligible for full benefits
+      if ((employee.flags & HOURLY_FLAG) && (employee.age > 65)) 
+    ```
   
     instead of
     
-    > `if (employee.isEligibleForFullBenefits())`
+    ```java
+      if (employee.isEligibleForFullBenefits())
+    ```
 
   * asdas
