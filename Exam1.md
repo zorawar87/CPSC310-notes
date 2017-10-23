@@ -162,7 +162,73 @@
     * Don't use the same word in different contexts just because it's funny or to overdo consistency
     * If you have a lot of methods prefixed with `add`, then you should use `insert` if
     * Rule of thumb: if the methods are semantically equivalent (similar structure for return values/params), all's good
-    * 
+  14. Use Solution Domain Names
+    * Use technical terms because you can assume other people reading source code are programmers. You can use algorithm names,
+      CS Terms et c.
+  15. Use Problem Domain Names
+    * If you can't find a name that comes from the solution set, use a term from the specific problem
+  16. Prefix to provide context, if all else fails
 
 
+### Takeaways ###
+  * Don't be afraid to change the name, if it's bad. Your team will thank you.
+  * People don't remember each and every variable and stuff. If change it within reason, your team will be as surprised as they would wth a good code improvement
+  * Don’t be afraid to make a name long.  A long descriptive name is better than a long descriptive comment.
+  * Don’t be afraid to spend time choosing a name
 
+# Clean Code Ch-03: Functions #
+
+### Basics ###
+  * Functions should be small. Like really small. Upto 20 lines is good.
+  * One level of abstraction per function
+  * Stepdown rule: functions should be followed by those at the next level of abstraction so the program reads top-down
+  * ***Do one thing only, and do it well***
+
+### Stuff within fns ###
+  * Code blocks (conditionals, loops) should be one line long --- probably a function call; at most two nested indents
+  * this implies that functions should not be large enough to hold nested structures.
+  * If you must use a **switch**, then make sure you aren't switching types. Polymorphise for that. Use switch for N values.
+
+### Fn Args ###
+  * Ideal # of function args is zero. More than 3 means you need to rethink
+  * Monadic Function (One param)
+    * Used to  ask a question about that argument and return something e.g. `boolean fileExists("MyFile")`
+    * Used to transform the arg object and return it e.g. `InputStream fileOpen("MyFile")`
+    * As an event that the program uses to alter its state and return nothing e.g. `void passwordAttemptFailedNtimes(int attempts)`
+    * AVOID other forms
+    * Flag Arguments
+      * if you pass a boolean to a function, you're function does too much. Don't.
+  * Dyadic and Triadic Functions are significantly harder to understand so use them carefully
+  * Polyadic Functions
+    * More than two or three args means that you can wrap it in a class of its own
+  * Arg list
+    * Arg lists (`Obj... name`) are treated as a single param
+    * So `printf(String, Obj... name)` is dyadic
+
+### General Rules  ###
+  * Command Query Separation: Either do someting, or answer something. not both.
+  * Prefer Exceptions to Error codes. Error codes require nested structures. This also violates CQS.
+  * Extract the contents of a try catch blocks into their own function. Throwing an exception is one thing; error processing is its own.
+  * Error handling is one thing. A function that handles errors should not do anything else.
+
+### Structured Programming ###
+  * Rules by Edsger Dijkstra
+  > Every function, and every block within a function, should have one entry and one exit. 
+  
+  * Implication: There should be only one `return` statement in a fn, no `break` or `continue` statements in a loop, and no `goto` statements
+
+  
+# Clean Code Ch-04: Comments #
+  * If you fail to express it in code, you use a comment.
+  * Don't use comments to makeup for bad code. Rewrite bad code.
+  * Explain yourself in code
+    > ```java
+      // Check to see if the employee is eligible for full benefits
+      if ((employee.flags & HOURLY_FLAG) && (employee.age > 65)) 
+    ```
+  
+    instead of
+    
+    > `if (employee.isEligibleForFullBenefits())`
+
+  * asdas
