@@ -393,3 +393,47 @@ Using an instance variable that references to other objects
 </details>
 
 -----
+
+<details>
+<summary>Lecture 09</summary>
+ 
+# Lecture 09 #
+
+SimUDuck Application. Refer to `hf-design-patterns.md:Ch-01`.
+
+</details>
+
+-----
+
+<details>
+<summary>Lecture 10</summary>
+ 
+# Lecture 10 #
+
+Rick's Guitar Inventory homework discussion.
+
+</details>
+
+-----
+
+<details>
+<summary>Lecture 11</summary>
+ 
+# Lecture 11 #
+
+Clean Code/Code Smells. Notes updated in `clean-code.md`.
+
+</details>
+
+-----
+
+<details>
+<summary>Lecture 12</summary>
+ 
+# Lecture 12 #
+
+Clean Code/Code Smells cont.. Notes updated in `clean-code.md`.
+
+</details>
+
+-----
