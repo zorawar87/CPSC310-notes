@@ -1,7 +1,7 @@
 <details>
 <summary>Lecture 02</summary>
-# Lecture 02 #
 
+# Lecture 02 #
 ## Software Development ##
   * Process of creating and maintaining software
   * typical phases
@@ -99,7 +99,6 @@ Waterfall                                | Agile
 <summary>Lecture 03</summary>
 
 # Lecture 03 #
-
 ## Software Design ##
   * *process* in which a **blueprint** is developed from which we can construct a software artifact
   * *process* of **defining** the architecture, components, interfaces and other **characteristics of a system**, and its result
