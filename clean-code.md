@@ -108,6 +108,8 @@
     * don't use "Noise words" e.g. class `Product`, `ProductInfo` and `ProductData` mean essentially the same: `Info` and `Data` are noise words
 
   4. *Use Pronounceable Names*
+    * if you can't pronounce it, you can't discuss it
+
   5. *Use Searchable Names*
     * longer names trump shorter names, and any searchable name trumps a constant in code.
     * single-letter names can ONLY be used as local variables inside short methods

@@ -421,8 +421,56 @@ Rick's Guitar Inventory homework discussion.
  
 # Lecture 11 #
 
-Clean Code/Code Smells. Notes updated in `clean-code.md`.
+## Clean Code ##
+Refer to `clean-code.md:Ch-01`
 
+## Code Smell ##
+surface indication that usually corresponds to a deeper problem in the system
+  * not necessarily bugs; corresponding code may work fine 
+  * symptoms of poor design and implementation choices
+
+## Refactoring ##
+  * change to the internal structure of software to make it easier to unstand and cheaper to modify without changing observable behaviour
+### When to Refactor ###
+REMEMBER THE BOYSCOUT RULE
+  * on adding/changing functionality
+  * after fixing bugs
+  * when code smells
+
+### How to Refactor ###
+  * make sure all tests that passed before, passed after
+  * improve the code
+  * repeat until code smell is gon
+
+## SOLID ##
+  * **S**RP - Single Responsibility Principle
+    * A class should have only one reason to change
+    * do one thing, and do it well; no God objects
+    * reinforces: *an object should be responsible for itself*
+    * Violations of SRP:
+      * "Change once, break everywhere"
+      * can't unit test easily
+  * **O**CP - Open/Closed Principle
+    * classes should be open for extension but closed for modification
+    * add new features through inheritance; think of plugins and extensions
+    * should not have to change existing classes, except for bug fixes
+  * **L**SP - Liskov Substitution Principle
+    * a superclass may be replaced by its subclasses
+    * ensures that every subclass follows the contract defined by its superclass
+    * subclass must provide support for all behaviour supported by the super class
+  * **I**SP - Interface Segregation Principle
+    * many specific interfaces are better than one general purpose interface
+    * prevents "God" interfaces
+    * makes it easier to extend or specialize parts of the system
+  * **D**IP - Dependency Inversion Principle
+    * high-level modules should not depend on low-level modules. Both should depend on abstractions.
+    * abstractions should not depend on details. the converse should be true
+
+## Design Principles ##
+  * DRY: Don't repeat yourself
+  * YAGNI: You aren't gonna need it
+    * avoid features that might come in use some day, but not now
+  * KISS
 </details>
 
 -----
@@ -432,8 +480,51 @@ Clean Code/Code Smells. Notes updated in `clean-code.md`.
  
 # Lecture 12 #
 
-Clean Code/Code Smells cont.. Notes updated in `clean-code.md`.
+## Code Smells ##
+  1. The Bloaters
+    Bloater smells represents something that has grown so large that it cannot be effectively handled
+    * Long method
+    * Large class
+    * Data clumps
+    * Long parameter list
+    * Primitive obsession
+  2. The Tool Abusers
+    the solution does not fully exploit the possibilities of object-oriented design
+    * Switch statements 
+      * using switch based on type, rather than polymorphosising
+    * Refused Bequest (legacy)
+      * not following the superclass's constraints
+      * Violation of LSP
+  3. The Change Preventers
+    * divergent change
+      * changing one section causes multiple (divergent) changed results
+      * Violation of SRP
+    * shotgun surgery
+      * class is not responsible for itself; changing one part breaks another
+    * parallel inheritance hierarchies
+  4. The Dispensibles
+    * Lazy Class
+      * doesn't do much work. just is there.
+    * Speculative Generality
+    * Data Class
+      * that mimics a data structure; does not have any context specific behaviours, only basic data-structure related methods
+    * Duplicated Code
+    * Dead Code
+  5. The Couplers
+    * feature envy
+      * one class repeatedly accesses methods of another class. should probably get a hold of itself
+      * class wishes it has the access/behaviours of the other class
+    * inappropriate intimacy
+      * classes know more about each other than they should
+    * message chains
+    * middle man
+      * an empty middleman between two classes, doesn't do anything else
+    * indecent exposure
+      * things that should be private/protected are public
+      * creates high coupling
 
+## Meaningful Names ##
+Refer to `clean-code.md`
 </details>
 
 -----
