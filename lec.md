@@ -232,7 +232,26 @@ Agile approach advocates for user-centric design and process
  
 # Lecture 05 #
 
-## From User Stories to Conceptual Model ##
+## From User Stories to Conceptual Model ## 
+From the user story, identify:
+  * different components i.e. classes 
+    * nouns i.e. objects in the user story will correspond to a class
+  * different behaviours i.e. class responsibilities
+    * action verbs; assign responsibilities to identified classes (nouns)
+    * these will become class methods
+    * *pay close attention to what class takes what responsibility. This needs thought*
+      * often certain objects will initiate the behaviour, but they shuooldn't be _doing_ the job
+    * ***DESIGN PRINCIPLE***: An object should always be responsible for itself
+      * "Tell don't ask"
+        * tell objects to do things, don't query their internal state and make a decision yourself
+    * It's easy to overload an object with a lot of responsibilites and create a *God object*
+      * an all encompassing "system" obejct that takes on all behaviours
+  * different interactions i.e. class collaborators
+    * identify how objects interact
+    * Class responsibility collaboration (CRC) Cards
+      * top section: Class Name
+      * Bottom left: Responsibilities
+      * Bottom right: Collaborations
 </details>
 
 -----
