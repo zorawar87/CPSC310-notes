@@ -239,7 +239,8 @@ From the user story, identify:
   * different behaviours i.e. class responsibilities
     * action verbs; assign responsibilities to identified classes (nouns)
     * these will become class methods
-    * *pay close attention to what class takes what responsibility. This needs thought*
+    * *pay close attention to what class takes what responsibility.
+This needs thought*
       * often certain objects will initiate the behaviour, but they shouldn't be _doing_ the job
     * ***DESIGN PRINCIPLE***: An object should always be responsible for itself
       * "Tell don't ask"
@@ -266,7 +267,8 @@ From the user story, identify:
   * Composition : *has-a* relationship
   
 ## Inheritance ##
-  * a subclass inherits everything from the super-class except for the constructors
+  * a subclass inherits everything from the super-class except for the
+constructors
   * explicitly invoke `super()` to call the super's constructor
   * sub-classes may:
     * override existing behaviour
@@ -287,7 +289,6 @@ From the user story, identify:
 </details>
 
 -----
-
 
 <details>
 <summary>Lecture 07</summary>
@@ -319,6 +320,76 @@ Implementation inheritance (sub-classing) | Interface inheritance (sub-typing)
 -----------------------------------------|--------------------------------------
 subclass inherits behaviors and its implementation from the base class | subclass inherits the description of behaviour from the base class and provides the implementation itself
 defines an object's implementation in terms of another object's implementation   | described when an object can be used in place of another
+</details>
+
+-----
+
+<details>
+<summary>Lecture 08</summary>
+ 
+# Lecture 08 #
+
+## Fragile Class Problem ##
+the super classes are considered "fragile" because seemingly safe
+modifications to a base class, when inherited by the derived clases,
+may cause the derived class to malfunction.
+  * You cannot easily determine whether a base class change is safe
+simply by examining it in isolation
+
+## Inheritance Issues ##
+Inheritance tends to create a **high/tight coupling**
+i.e.  subclasses are highly dependent on the base classes
+  * white-box reuse, when the internals are exposed, breaks encapsulation
+
+"Inheritance exposes a subclass to details of its parent's implementation so,
+'inheritance breaks encapsulation'" (GoF)
+
+## Composition and Aggregation ##
+[Association  [Aggregation  [Composition  ]]]
+
+### Association ###
+  * No ownership. no lifetime dependency
+
+### Aggregation ###
+  * One parent instance. no lifetime dependency
+  * *has-a* relationship
+  * implies that objects can survive separately
+    * `Student` and `Course`
+    * `Student` can have a `Course` within it, or `Course` can have `Student`s within it.
+    * just because the course is over, doesn't mean that the student stops existing
+    * doesn't mean that when a course is created, then a student must be created too -- the student could've existed before
+    * there is a directional association, but we imply no lifetime dependency
+
+### Composition ###
+  * one parent instance. lifetime of child depends on parent
+
+Using an instance variable that references to other objects
+  * *part-of* relationship
+  * an object is *composed* of other object
+  * implies that objects cannot survive separately
+    * `Cat` and `Tail`
+    * `Tail` must be created when `Cat` is, and when `Cat` dies, then `Tail` does too
+    * they are tightly coupled
+
+## Design Principles ##
+  1. High cohesion, low coupling
+  2. Encapsulate what varies
+  3. Favour composition over inheritance
+  4. Program to interfaces, not implementation
+
+### Inheritance v. Composition ###
+#### Benefits of Inheritance ####
+  1. Polymorphism and dynamic binding (dispatch) make code easier to change
+  2. new implementations or similar things are easy
+  3. naturally expresses `ChildObject` *is a special kind of* `ParentObject`
+
+#### Benefits of Composition ####
+  1. Black-box reuse
+  2. emulate multiple inheritance
+  3. reuse only necessary behaviours
+  4. control the visibility of the compoosed object
+
+## UML ##
 </details>
 
 -----
