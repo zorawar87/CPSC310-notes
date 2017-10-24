@@ -255,3 +255,35 @@ From the user story, identify:
 </details>
 
 -----
+
+<details>
+<summary>Lecture 06</summary>
+ 
+# Lecture 06 #
+
+## Object Relationship ## 
+  * Inheritance : *is-a* relationship
+  * Composition : *has-a* relationship
+  
+## Inheritance ##
+  * a subclass inherits everything from the superclass except fo the constructors
+  * explicitly invke `super()` to call the super's constructor
+  * subclasses may:
+    * override existing behaviour
+    * extend by providing new methods and fields
+
+## Polymorphism ##
+  * Ability of a reference variable to take different forms
+  * can be assigned an instance of its class or any subclass
+  * Upcasting (using a more general class) is automatic
+  * Downcasting (using a more specific class) is manual
+  ```java
+    Person person1 = student1;  //automatically upcasted to person
+    Student student2 = (Student) person1;  //manual downcasting to student
+  ```
+
+### Dynamic Dispatch ###
+  * checks object's fields/behaviours against that of the variable type
+</details>
+
+-----
