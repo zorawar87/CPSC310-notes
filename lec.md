@@ -287,3 +287,38 @@ From the user story, identify:
 </details>
 
 -----
+
+
+<details>
+<summary>Lecture 07</summary>
+ 
+# Lecture 07 #
+
+## Interfaces ##
+  * collection of method signatures with no data or bodies
+  * form a contract bw the class and the outside world
+  * NAMING:
+    * adjectives ending with *-able* or *-ible* if they provide a capability
+    * nouns otherwise
+
+## Abstract Classes ##
+  * may or may not include abstract methods
+    * method declared without an implementation
+  * cannot be instantiated but can be subclassed
+  * generic enough to allow for specific implementation in subclasses
+
+Interfaces | Abstract Classes
+-----------|-----------------
+Extend only one class a time | Extend any number of interfaces at a time
+Extend a concrete or or abstract class | only extend another interface
+Have both abstract and concrete methods | only have abstract methods
+use any access modifiers | only use public (not protected | private)
+have use static, final, or static final variables | only use [public static final cont variable
+
+Implementation inheritance (subclassing) | Interface inheritance (subtyping)
+-----------------------------------------|--------------------------------------
+subclass inherits behaviors and its implementation from the base class | subclass inherits the description of behaviour from the base class and provides the implementation itself
+defines an object's implementation in terms of another object's implementation   | described when an object can be used in place of another
+</details>
+
+-----
