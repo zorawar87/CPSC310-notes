@@ -223,7 +223,7 @@ Agile approach advocates for user-centric design and process
   * follows the format: *Given* **(precondition)** *When* **(do some action)** *Then* **(expect some result)**
     * *Given* that a wishlist is empty *When* a shopper adds a new item *Then* the list should contain 1 item.
 
-<details>
+</details>
 
 -----
 
