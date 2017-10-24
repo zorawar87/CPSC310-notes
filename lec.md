@@ -1,4 +1,6 @@
-# Lecture Notes 02 #
+<details>
+<summary>Lecture 02</summary>
+# Lecture 02 #
 
 ## Software Development ##
   * Process of creating and maintaining software
@@ -89,10 +91,14 @@ Waterfall                                | Agile
   * Product Backlog
   * Scrum Backlog
   * Potentially Shippable Product
+</details>
 
 -------
 
-# Lecture Notes 03 #
+<details>
+<summary>Lecture 03</summary>
+
+# Lecture 03 #
 
 ## Software Design ##
   * *process* in which a **blueprint** is developed from which we can construct a software artifact
@@ -174,3 +180,4 @@ represents a model for classifying software quality attributes
   * **P**erformance: speed, resouce consumption, throughput, scalability
   * **S**upportability: adaptability, maintainability, internationalisation, repair speed
   * **+** more requirements
+</details>
