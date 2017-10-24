@@ -28,17 +28,17 @@
     6. Deployment
     
 #### Limitations of Waterfall ####
-  * Does not accommodate Change in design. 
+  * Does not accomodate Change in design. 
   * If all features are not accounted for during the design phase, then it's game over
 
 ### Agile Methodology ###
   * based on iterative and incremental development
-  * Dev cycle is the same that of Waterfall, except that it is iterative -- i.e. the process repeats
+  * Dev cycle is the same that of Watefall, except that it is iterative -- i.e. the process repeats
   * follows the agile manifesto
   * Is collaborative and client focused
     * client is involved throughout the development because they are the ultimate source of information
     * client guides the project
-  * Improvements with each iteration
+  * Improvments with each iteration
   * Focus on Minimum Viable Products (MVPs) over short periods of time
   * Backlog to keep track of features and requirements
   * promote sustainable development
@@ -70,9 +70,9 @@ Waterfall                                | Agile
 \+ Clear Deadlines                       | + Immediate user feedback
 \+ Well-defined milestones               | + Test driven development
 \+ Requires stability                    | + Teamwork
-\+ Predictable, and Easy to manage time  | - Unpredictable time-line
+\+ Predictable, and Easy to manage time  | - Unpredictable timeline
 \- Very low flexibility                  | - High commitment 
-\- Requirements must be known at start   | - Skill dependent teams  
+\- Requirements must be known at start   | - Skill dependent teans  
 \- Tendency to neglect testing           | - Tendency to neglect documentation
 
 
@@ -112,7 +112,7 @@ Waterfall                                | Agile
       * is it done correctly and robustly?
         * Correct = produces correct answer
         * Robust = is correct regardless of the input; deals with a variety of inputs and unexpected errors
-  * Re-usability
+  * Reusability
     * components are modular and independent
     * takes advantage of existing code libraries
     * supports timely production of large-scale software
@@ -130,7 +130,7 @@ Waterfall                                | Agile
 
 #### Object-Oriented Principles (mnemonic: A PIE) ####
   * Abstraction 
-    * extracting relevant features and removing what is unnecessary
+    * extracting releavant features and removing what is unnecessary
     * allows modeling and representing objects in the simplest manner
     * GOAL: simplify the description of an object to its essentials
   * Encapsulation
@@ -138,13 +138,13 @@ Waterfall                                | Agile
   * Inheritance
     * allows a new class to be defined based upon an existing class
     * creates a parent/super-child/sub class relationship
-    * *is a* relationship between parent and child
+    * *is a* relationship bw parent and child
   * Polymorphism
     * lit. "many forms"
-    * allows performing the behaviour corresponding with the type of what we're working with
+    * allows performing the behaviour corrosponding with the type of what we're working with
     * brings flexibility; we can do the right thing at the right time
 
-## From Problem to Solution ##
+## From Problem to Soln ##
   1. Gather your requirements
     * What should the software do?
   2. Describe the solution
@@ -169,14 +169,14 @@ Waterfall                                | Agile
     * E.G:
       * Customer must be able to load page in under 5 seconds
       * Customer data must be encrypted to comply with ... 
-      * Server must have a 99% up-time 
+      * Server must have a 99% uptime 
 
 #### FURPS / FURPS+ ####
 represents a model for classifying software quality attributes
   * **F**unctional: features, capabilities, security
   * **U**sability: human factors, help, documentation
-  * **R**eliability: frequency of failure, recover-ability
-  * **P**erformance: speed, resource consumption, throughput, scalability
+  * **R**eliability: frequency of failure, recoverability
+  * **P**erformance: speed, resouce consumption, throughput, scalability
   * **S**upportability: adaptability, maintainability, internationalisation, repair speed
   * **+** more requirements
 </details>
@@ -192,7 +192,7 @@ Once we know what the functional requirements are, we need to describe the syste
 
 Agile approach advocates the following two tools:
   1. Use Cases
-    * defines the interactions between actors and the system to accomplish a goal
+    * defines the interactions bw actos and the sys to accomplish a goal
   2. User Stories
 <details>
 
