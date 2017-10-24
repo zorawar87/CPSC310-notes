@@ -190,9 +190,49 @@ represents a model for classifying software quality attributes
 ## From Requirements to solution ##
 Once we know what the functional requirements are, we need to describe the system from the user's PoV.
 
-Agile approach advocates the following two tools:
-  1. Use Cases
-    * defines the interactions between actors and the system to accomplish a goal
-  2. User Stories
+Agile approach advocates for user-centric design and process
+
+### Use Cases ###
+  * defines the interactions between actors and the system to accomplish a goal
+  * can get very long, complex and tedious to create; in such a case it is not agile
+
+### User Stories ###
+  * informal description of one or more features of a software system
+  * written in plain english
+  * expresses a realtively small feature
+  * intentionally kept short and simple
+  * Note: Epic is  very large user story/user activity that needs to be broken down into user *stories*
+  * *Cards, Conversation, Confirmation* (The Three C's of User Stories)
+    * Cards: written on physical cards 
+    * Conversation: discussed at different times and places throughout the project; often verbal
+    * Confirmation: specific requirements to confirm that a feature expressed in a user story is properly completed
+  * Follows the format: *As a* **(role)**, *I want* **(something)** *so that* **(benefit)**
+    * *As a* student, *I want* to log into Moodle *so that* I can view lecture notes
+    * *As a* shopper, *I want* to add items to a wishlist *so that* I can purchase them later on.
+    
+#### Story mapping ####
+  * Arranging user stories into a useful model to understand and outline the functionality of the system
+  * *user story map* gives an overview of the system and is a useful tool for planning:
+    * visually represnt the product backlog
+    * Identify the MVP
+    * identify the potential product releases
+
+#### Acceptance Criteria ####
+  * defines the boundaries for user stories (features) and specify the reqruirements that must be met for a user story to be considered completed and working as expected
+  * should be developed alongside user stories to reduce surprises late on and give a better idea of when a project can be considered complete
+  * follows the format: *Given* **(precondition)** *When* **(do some action)** *Then* **(expect some result)**
+    * *Given* that a wishlist is empty *When* a shopper adds a new item *Then* the list should contain 1 item.
+
 <details>
 
+-----
+
+<details>
+<summary>Lecture 05</summary>
+ 
+# Lecture 05 #
+
+## From User Stories to Conceptual Model ##
+</details>
+
+-----
