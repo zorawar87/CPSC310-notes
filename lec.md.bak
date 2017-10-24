@@ -198,8 +198,8 @@ Agile approach advocates for user-centric design and process
 
 ### User Stories ###
   * informal description of one or more features of a software system
-  * written in plain English
-  * expresses a relatively small feature
+  * written in plain english
+  * expresses a realtively small feature
   * intentionally kept short and simple
   * Note: Epic is  very large user story/user activity that needs to be broken down into user *stories*
   * *Cards, Conversation, Confirmation* (The Three C's of User Stories)
@@ -208,20 +208,20 @@ Agile approach advocates for user-centric design and process
     * Confirmation: specific requirements to confirm that a feature expressed in a user story is properly completed
   * Follows the format: *As a* **(role)**, *I want* **(something)** *so that* **(benefit)**
     * *As a* student, *I want* to log into Moodle *so that* I can view lecture notes
-    * *As a* shopper, *I want* to add items to a wish list *so that* I can purchase them later on.
+    * *As a* shopper, *I want* to add items to a wishlist *so that* I can purchase them later on.
     
 #### Story mapping ####
   * Arranging user stories into a useful model to understand and outline the functionality of the system
   * *user story map* gives an overview of the system and is a useful tool for planning:
-    * visually represent the product backlog
+    * visually represnt the product backlog
     * Identify the MVP
     * identify the potential product releases
 
 #### Acceptance Criteria ####
-  * defines the boundaries for user stories (features) and specify the requirements that must be met for a user story to be considered completed and working as expected
+  * defines the boundaries for user stories (features) and specify the reqruirements that must be met for a user story to be considered completed and working as expected
   * should be developed alongside user stories to reduce surprises late on and give a better idea of when a project can be considered complete
   * follows the format: *Given* **(precondition)** *When* **(do some action)** *Then* **(expect some result)**
-    * *Given* that a wish list is empty *When* a shopper adds a new item *Then* the list should contain 1 item.
+    * *Given* that a wishlist is empty *When* a shopper adds a new item *Then* the list should contain 1 item.
 
 </details>
 
@@ -240,12 +240,12 @@ From the user story, identify:
     * action verbs; assign responsibilities to identified classes (nouns)
     * these will become class methods
     * *pay close attention to what class takes what responsibility. This needs thought*
-      * often certain objects will initiate the behaviour, but they shouldn't be _doing_ the job
+      * often certain objects will initiate the behaviour, but they shuooldn't be _doing_ the job
     * ***DESIGN PRINCIPLE***: An object should always be responsible for itself
       * "Tell don't ask"
         * tell objects to do things, don't query their internal state and make a decision yourself
-    * It's easy to overload an object with a lot of responsibilities and create a *God object*
-      * an all encompassing "system" object that takes on all behaviours
+    * It's easy to overload an object with a lot of responsibilites and create a *God object*
+      * an all encompassing "system" obejct that takes on all behaviours
   * different interactions i.e. class collaborators
     * identify how objects interact
     * Class responsibility collaboration (CRC) Cards
@@ -266,17 +266,17 @@ From the user story, identify:
   * Composition : *has-a* relationship
   
 ## Inheritance ##
-  * a subclass inherits everything from the super-class except for the constructors
-  * explicitly invoke `super()` to call the super's constructor
-  * sub-classes may:
+  * a subclass inherits everything from the superclass except fo the constructors
+  * explicitly invke `super()` to call the super's constructor
+  * subclasses may:
     * override existing behaviour
     * extend by providing new methods and fields
 
 ## Polymorphism ##
   * Ability of a reference variable to take different forms
   * can be assigned an instance of its class or any subclass
-  * Up-casting (using a more general class) is automatic
-  * Down-casting (using a more specific class) is manual
+  * Upcasting (using a more general class) is automatic
+  * Downcasting (using a more specific class) is manual
   ```java
     Person person1 = student1;  //automatically upcasted to person
     Student student2 = (Student) person1;  //manual downcasting to student
@@ -296,7 +296,7 @@ From the user story, identify:
 
 ## Interfaces ##
   * collection of method signatures with no data or bodies
-  * form a contract between the class and the outside world
+  * form a contract bw the class and the outside world
   * NAMING:
     * adjectives ending with *-able* or *-ible* if they provide a capability
     * nouns otherwise
@@ -304,8 +304,8 @@ From the user story, identify:
 ## Abstract Classes ##
   * may or may not include abstract methods
     * method declared without an implementation
-  * cannot be instantiated but can be sub-classed
-  * generic enough to allow for specific implementation in sub-classes
+  * cannot be instantiated but can be subclassed
+  * generic enough to allow for specific implementation in subclasses
 
 Interfaces | Abstract Classes
 -----------|-----------------
@@ -315,7 +315,7 @@ Have both abstract and concrete methods | only have abstract methods
 use any access modifiers | only use public (not protected | private)
 have use static, final, or static final variables | only use [public static final cont variable
 
-Implementation inheritance (sub-classing) | Interface inheritance (sub-typing)
+Implementation inheritance (subclassing) | Interface inheritance (subtyping)
 -----------------------------------------|--------------------------------------
 subclass inherits behaviors and its implementation from the base class | subclass inherits the description of behaviour from the base class and provides the implementation itself
 defines an object's implementation in terms of another object's implementation   | described when an object can be used in place of another
