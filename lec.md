@@ -99,8 +99,78 @@ Waterfall                                | Agile
   * *process* of **defining** the architecture, components, interfaces and other **characteristics of a system**, and its result
   * i.e. understand the problem, design a solution, implement the solution
 
-### Software Design Goals ###
+## Software Design Goals ##
   * Reliability
+    * each component of the app should be responsible for a specific property an behaviour
+    * supports validation and testing
+      * does it do what it should?
+      * is it done correctly and robustly?
+        * Correct = produces correct answer
+        * Robust = is correct regardless of the input; deals with a variety of inputs and unexpected errors
   * Reusability
+    * components are modular and independent
+    * takes advantage of existing code libraries
+    * supports timely production of large-scale software
   * Extensibility
+    * components can be changed and added
+    * supports maintenance and evolution of software
   * Flexibility
+    * modifications can be made without affecting many components
+
+### Object Oriented Programming ###
+  * supports all the aforementioned goals
+  * all about classes and objects
+    * classes: blueprint for objects defined what an object can store and do
+    * objects: instance of a class
+
+#### Object-Oriented Principles (mnemonic: A PIE) ####
+  * Abstraction 
+    * extracting releavant features and removing what is unnecessary
+    * allows modeling and representing objects in the simplest manner
+    * GOAL: simplify the description of an object to its essentials
+  * Encapsulation
+    * binding certain features together in order to hide and protect them
+  * Inheritance
+    * allows a new class to be defined based upon an existing class
+    * creates a parent/super-child/sub class relationship
+    * *is a* relationship bw parent and child
+  * Polymorphism
+    * lit. "many forms"
+    * allows performing the behaviour corrosponding with the type of what we're working with
+    * brings flexibility; we can do the right thing at the right time
+
+## From Problem to Soln ##
+  1. Gather your requirements
+    * What should the software do?
+  2. Describe the solution
+    * How do users use this solution?
+  3. Identify the most important objects
+    * What classes do we need?
+  4. Identify the interactions between objects
+    * What responsibilities and behaviours do we need?
+  5. Create a class diagram
+    * Visual rep of classes
+
+### Gathering Requirements ###
+  * *Functional Requirements*: What does it do?
+    * Features and capabilities
+    * must-haves over nice-to-haves
+    * E.G: 
+      * Customer must be able to see their balance
+      * Customer must be able to pay their bill online
+      * Customer must be able to open a new account online
+  * *Non-functional Requirements*: Other
+    * Help, documentation, performance, support
+    * E.G:
+      * Customer must be able to load page in under 5 seconds
+      * Customer data must be encrypted to comply with ... 
+      * Server must have a 99% uptime 
+
+#### FURPS / FURPS+ ####
+represents a model for classifying software quality attributes
+  * **F**unctional: features, capabilities, security
+  * **U**sability: human factors, help, documentation
+  * **R**eliability: frequency of failure, recoverability
+  * **P**erformance: speed, resouce consumption, throughput, scalability
+  * **S**upportability: adaptability, maintainability, internationalisation, repair speed
+  * **+** more requirements
