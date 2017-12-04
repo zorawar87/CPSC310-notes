@@ -355,9 +355,11 @@ i.e.  subclasses are highly dependent on the base classes
   * *has-a* relationship
   * implies that objects can survive separately
     * `Student` and `Course`
-    * `Student` can have a `Course` within it, or `Course` can have `Student`s within it.
+    * `Student` can have a `Course` within it, or `Course` can have `Student`s
+    within it.
     * just because the course is over, doesn't mean that the student stops existing
-    * doesn't mean that when a course is created, then a student must be created too -- the student could've existed before
+    * doesn't mean that when a course is created, then a student must be created
+    too -- the student could've existed before
     * there is a directional association, but we imply no lifetime dependency
 
 ### Composition ###
@@ -395,93 +397,100 @@ Using an instance variable that references to other objects
 -----
 
 <details>
-<summary>Lecture 09</summary>
- 
-# Lecture 09 #
-
-SimUDuck Application. Refer to `hf-design-patterns.md:Ch-01`.
+<summary>09: SimuDuck </summary>
+Refer to `hf-design-patterns.md:Ch-01`.
 
 </details>
 
 -----
 
 <details>
-<summary>Lecture 10</summary>
+<summary>0A: Writing Great Software </summary>
  
-# Lecture 10 #
+# Great Software #
+1. does what the customer wants it to
+2. uses basic OO to add flexibility
+3. maintainable reusable design.
 
-Rick's Guitar Inventory homework discussion.
+_Refactoring_ is the process of changing the internal structure
+of the existing code without changing its external behaviour
 
 </details>
 
 -----
 
 <details>
-<summary>Lecture 11</summary>
- 
-# Lecture 11 #
+<summary>0B: Refactoring and Design Principles</summary>
 
-## Clean Code ##
+# Clean Code #
 Refer to `clean-code.md:Ch-01`
 
-## Code Smell ##
+# Code Smell #
 surface indication that usually corresponds to a deeper problem in the system
-  * not necessarily bugs; corresponding code may work fine 
-  * symptoms of poor design and implementation choices
+  * not necessarily bugs
+  * corresponding code may work fine 
+  * are symptoms of poor design and implementation choices
 
-## Refactoring ##
-  * change to the internal structure of software to make it easier to unstand and cheaper to modify without changing observable behaviour
-### When to Refactor ###
-REMEMBER THE BOYSCOUT RULE
-  * on adding/changing functionality
+# Refactoring #
+internal changes in the software to make it easier to understand 
+  and cheaper to modify without changing observable behaviour
+
+## When to Refactor ##
+> THE BOYSCOUT RULE: Leave the campground cleaner than you found it
+  * before modifying functionality
   * after fixing bugs
   * when code smells
 
-### How to Refactor ###
-  * make sure all tests that passed before, passed after
+## re:Refactoring ##
+  * make sure all tests that passed before, pass after
   * improve the code
-  * repeat until code smell is gon
 
+# Design Principles #
+## DRY: Don't Repeat Yourself ## 
+  * If you've written it again, there's probably a better way.
+## YAGNI: You Aren't Gonna Need It ##
+  avoid features that might come in use some day, but not now
+## KISS: Keep It Simple, Stupid ##
+  * KISS because YAGNI
 ## SOLID ##
-  * **S**RP - Single Responsibility Principle
-    * A class should have only one reason to change
-    * do one thing, and do it well; no God objects
-    * reinforces: *an object should be responsible for itself*
-    * Violations of SRP:
-      * "Change once, break everywhere"
-      * can't unit test easily
-  * **O**CP - Open/Closed Principle
-    * classes should be open for extension but closed for modification
-    * add new features through inheritance; think of plugins and extensions
-    * should not have to change existing classes, except for bug fixes
-  * **L**SP - Liskov Substitution Principle
-    * a superclass may be replaced by its subclasses
-    * ensures that every subclass follows the contract defined by its superclass
-    * subclass must provide support for all behaviour supported by the super class
-  * **I**SP - Interface Segregation Principle
-    * many specific interfaces are better than one general purpose interface
-    * prevents "God" interfaces
-    * makes it easier to extend or specialize parts of the system
-  * **D**IP - Dependency Inversion Principle
-    * high-level modules should not depend on low-level modules. Both should depend on abstractions.
-    * abstractions should not depend on details. the converse should be true
+### Single Responsibility Principle (SRP) ###
+> A class should have only one reason to change
+  * a component should have one primary responsibility
+  * do one thing. do it well. no god objects
+  * reinforces: *an object should be responsible for itself*
+  * high cohesion: closely related behaviour should be together
+  * Violations of SRP:
+    * "Change once, break everywhere"
+    * can't unit test easily
 
-## Design Principles ##
-  * DRY: Don't repeat yourself
-  * YAGNI: You aren't gonna need it
-    * avoid features that might come in use some day, but not now
-  * KISS
+### Open/Closed Principle (OCP) ###
+> classes should be open for extension but closed for modification
+  * add new features through inheritance
+    * think of plugins and extensions
+  * an existing class should only change to fix bugs
+
+### Liskov Substitution Principle (LSP) ###
+> a superclass may be substituted by its subclasses
+  * every subclass must follow the contract defined by its superclass
+  * subclasses must support all behaviours supported by the superclass
+
+### Interface Segregation Principle (ISP) ###
+> many specific interfaces are better than one general purpose interface
+  * prevents "god interfaces"
+  * makes it easier to extend or specialize parts of the system
+
+### Dependency Inversion Principle (DIP) ###
+> High-level modules should not depend on low-level modules
+> Both should depend on abstractions.
+  * details should depend on the abstractions, not the other way around
 </details>
 
 -----
 
 <details>
-<summary>Lecture 12</summary>
- 
-# Lecture 12 #
-
-## Code Smells ##
-  1. The Bloaters
+<summary>0C: Code Smells</summary>
+# Code Smells #
+## The Bloaters #
     Bloater smells represents something that has grown so large that it cannot be effectively handled
     * Long method
     * Large class
